@@ -13,9 +13,10 @@ void setup() {
   FastLED.setBrightness(BRIGHTNESS);
 }
 
+
 void loop() {
   for(int i = 0; i < NUM_LEDS; i++) {
-    leds[i] = CHSV(i * 20, 255, 255);
+    leds[i] = CHSV(i * 20, 255, 255);  // Rainbow hue
   }
   FastLED.show();
   delay(100);
